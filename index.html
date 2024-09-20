@@ -35,10 +35,29 @@
           computer revolution of the 1970s and 1980s, along with his early business partner and fellow Apple co-founder
           Steve Wozniak.
         </p>
-        <hr />
+        <p>
+          Jobs was born in San Francisco in 1955 and adopted shortly afterwards. He attended Reed College in 1972 before withdrawing that same year. In 1974, he traveled through India, seeking enlightenment before later studying Zen Buddhism. He and Wozniak co-founded Apple in 1976 to further develop and sell Wozniak's Apple I personal computer. Together, the duo gained fame and wealth a year later with production and sale of the Apple II, one of the first highly successful mass-produced microcomputers.
+        </p>
+        <hr>
       </section>
       <footer>
-        <h5>Seaway Area Technical Center - Computer &amp; Information Science</h5>
+        <h5 id="copyright"></h5>
       </footer>
+
+      <script>
+        window.addEventListener('load', onLoad);
+
+        function onLoad() {
+          const copyrightEl = document.getElementById('copyright');
+
+          if (copyrightEl) {
+            const currentYear = new Date().getFullYear();
+            const copyrightText = 'Copyright &copy; ' + currentYear + ' Seaway Area Technical Center - Computer &amp; Information Science Project';
+
+            copyrightEl.innerHTML = copyrightText;
+          }
+        }
+      </script>
+
 </body>
 </html>

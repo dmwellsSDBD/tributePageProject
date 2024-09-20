@@ -47,6 +47,10 @@
     color: #339;
     text-decoration: underline;
 }
+
+p {
+  margin-top: 1.4em;
+}
   
   .tribute {
     display: grid;

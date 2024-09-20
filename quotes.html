@@ -29,7 +29,22 @@
         <h2>Quotes</h2>
       </section>
       <footer>
-        <h5>Seaway Area Technical Center - Computer &amp; Information Science</h5>
+        <h5 id="copyright"></h5>
       </footer>
+
+      <script>
+        window.addEventListener('load', onLoad);
+
+        function onLoad() {
+          const copyrightEl = document.getElementById('copyright');
+
+          if (copyrightEl) {
+            const currentYear = new Date().getFullYear();
+            const copyrightText = 'Copyright &copy; ' + currentYear + ' Seaway Area Technical Center - Computer &amp; Information Science Project';
+
+            copyrightEl.innerHTML = copyrightText;
+          }
+        }
+      </script>
 </body>
 </html>
